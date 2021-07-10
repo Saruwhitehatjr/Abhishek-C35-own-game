@@ -7,8 +7,8 @@ class Meter{
         }
         this.pointA = pointA
         this.pointB = pointB
-        this.sling =Matter.Constraint.create(options)
-        World.add(world, this.sling);
+        this.body =Matter.Constraint.create(options)
+        World.add(world, this.body);
     }
 
    

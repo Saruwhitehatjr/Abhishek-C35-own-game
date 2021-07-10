@@ -1,4 +1,4 @@
-class Player{
+class Win{
     constructor(x, y, width, height) {
         var options = {
             'restitution':0.8,
@@ -10,19 +10,18 @@ class Player{
         this.width = width;
         this.height = height;
         
-        this.image3 = loadImage("assest/bluecar.png");
-        
+        this.image3 = loadImage("assest/win.png");
         World.add(world, this.body);
       }
     
 
-display3(){
+display(){
   var angle = this.body.angle;
   push();
   translate(this.body.position.x, this.body.position.y);
   rotate(angle);
   imageMode(CENTER);
-  image(this.image3, 0, 0, 50,100);
+  image(this.image3, 0, 0,this.width,this.height);
   pop();
 
 }
